@@ -5,6 +5,9 @@ import analyzer from './analyzer.js';
 const Element= document.getElementById("reset-button");
 Element.addEventListener("click", BorrarTexto);
 
+const cajadetexto= document.getElementsByName("user-input")[0];
+cajadetexto.addEventListener("keyup", analizar);
+
 function BorrarTexto() {
     let texto = document.getElementsByName("user-input");
     texto[0].value ="";
@@ -14,5 +17,7 @@ function analizar(){
     numeroPalabras(texto)
 }
 function numeroPalabras(texto){
-    analyzer.getWordCount(texto);
+   var numerodepalabras = analyzer.getWordCount(texto);
+   const matches = document.querySelectorAll("li");
+   matches [0] .innerHTML = "Palabras " + numerodepalabras;
 }
