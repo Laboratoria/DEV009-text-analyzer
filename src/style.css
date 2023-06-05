@@ -1,0 +1,60 @@
+video , h1 {
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+margin: 0;
+}
+
+video{
+    object-fit: cover;
+    position: absolute;
+}
+h1{
+    position: absolute;
+    font-size: 60px;
+    font-family: inter;
+    font-weight: 900;
+    line-height: 15vh;
+    text-align: center;
+    background: rgb(107, 175, 192);
+    mix-blend-mode: screen;
+    margin-bottom: 5px;
+}
+
+main{
+    position: absolute;
+    top: 140px;
+}
+
+textarea[name="user-input"] {
+    position: relative;
+    left: 20%;
+    border-radius: 2%;
+    box-shadow: 20px 20px 50px gray;
+    font-size: 20px;
+    border: 1px solid rgb(24, 89, 187);
+}
+
+.resultados{
+    font-size: 25px;
+    color: blue;
+    text-decoration: double;
+    list-style: none;
+    columns: 2;
+    line-height: 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 35px;
+    left: 15vw;
+    position: relative;
+    top: 70px;
+    
+}
+.resultados>li{
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 2em 0 0;
+    border-radius: 20%;
+
+}

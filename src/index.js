@@ -14,10 +14,12 @@ function BorrarTexto() {
 }
 function analizar(){
     let texto = document.getElementsByName("user-input")[0].value;
-    numeroPalabras(texto)
-}
+    numeroPalabras(texto);
+    
 function numeroPalabras(texto){
-   var numerodepalabras = analyzer.getWordCount(texto);
+   var numpalabras = analyzer.getWordCount(texto);
    const matches = document.querySelectorAll("li");
-   matches [0] .innerHTML = "Palabras " + numerodepalabras;
+   matches[0].innerHTML = "Palabras " + numpalabras;
+}
+
 }
