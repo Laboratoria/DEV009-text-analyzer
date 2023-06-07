@@ -542,11 +542,9 @@ Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
 * [ ] Esta desplegado en GitHub Pages.
 * [ ] Tiene un README con la definición del producto.
 
-Recuerda que debes hacer una autoevaluación de _objetivos de aprendizaje_ y
-_life skills_ desde tu dashboard de estudiante.
+Además recuerda que debes hacer: llenado de sprint check out de cierre de proyecto, una autoevaluación de objetivos de aprendizaje y autoevaluación de life skills desde tu dashboard de estudiante. [Acá el link](https://coda.io/d/_deHfHkTC743/Como-lograras-aprender-DEV_sumg1#_lu6qL) del flujo para que puedas ver el proceso.
 
-Si no has completado todo lo anterior, no consideramos que estás lista para
-tu sesión de Project Feedback.
+Si no has completado todo lo anterior, no consideramos que estás lista para tu sesión de Project Feedback. ([acá](https://coda.io/d/_deHfHkTC743/Project-Feedback_suLH5) te dejamos el link de esta instancia).
 
 ## 9. Objetivos de aprendizaje
 
