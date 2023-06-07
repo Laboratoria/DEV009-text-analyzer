@@ -17,9 +17,9 @@ let resultado = "";
 
 function BorrarTexto() {
   // se declara la variable texto y se le asigna el elemento que tenga el nombre user-input
-  const texto = document.getElementsByName("user-input");
+  const texto = document.getElementsByName("user-input")[0];
   // al valor que esta en la posicion cero de la variable texto se le asigna vacio para borrar el valor
-  texto[0].value = "";
+  texto.value = "";
   resultado = "";
   // se llama la funcion analizar para que esta se ejecute y llene los li con el nuevo valor de resultado
   analizar();
@@ -31,7 +31,9 @@ function analizar() {
   // Selecciona el elemento que tine la clase palabras, y el innerhtml permite asignar un valor al contenido de este elemento
   // despues del igual se concatena el valor de la palabra palabras con el valor que retorna el metodo getWordCount
   document.querySelector(".Palabras").innerHTML = "Palabras &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + analyzer.getWordCount(resultado);
+  document.querySelector(".Caracteres").innerHTML = "Caracteres &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + analyzer.getCharacterCount(resultado);
 }
+
 
 
 
