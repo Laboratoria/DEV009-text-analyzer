@@ -60,11 +60,38 @@ textarea[name="user-input"] {
     padding: 0 0px 0 0;
     border-radius: 20%;
     width: 11em;
-    color: #200972;
-    text-shadow: 2px 2px 0 #90cce4, 4px 4px 0 #b1d65b;
-
 }
 
+.Palabras{
+   color: #200972; 
+   font-weight: 900;
+}
+
+.Caracteres{
+    color: #d81d5b;
+    font-weight: 900; 
+ }
+
+ .Numeros{
+    color: #054715af; 
+    font-weight: 900;
+ }
+
+ .Caracteressinespacios{
+    color: #c767b7;
+    font-weight: 900;
+ }
+
+ .Suma{
+    color: #76397e; 
+    font-weight: 900;
+ }
+
+ .Promediolongitud{
+    color: #b3693e; 
+    font-weight: 900;
+ }
+ 
 #reset-button{
     font-size: 28px;
     background: #252525;
