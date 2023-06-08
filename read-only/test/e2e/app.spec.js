@@ -96,7 +96,8 @@ test.describe('Para un texto sin números válidos:', () => {
 });
 
 test.describe('Botón:', () => {
-  
+  const TEST_TEXT_EMPTY = '';
+
   test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:3000/');
     const textarea = await page.locator('textarea[name="user-input"]');  
@@ -107,13 +108,13 @@ test.describe('Botón:', () => {
   test('Limpia caja de texto', async ({ page }) => {
     const textarea = await page.locator('textarea[name="user-input"]');
     await expect(textarea).toHaveValue(TEST_TEXT_NO_NUMBERS);
-    const button = await page.locator('id=clear-button')
+    const button = await page.locator('id=reset-button')
     await button.click();
     await expect(textarea).toHaveValue(TEST_TEXT_EMPTY);
   });
 });
 
-//TODO: Reemplazar skip por describe para ejecutar el test de funcionalidades opcionales
+//TODO: No quitar skip
 test.skip('Opcional:', () => {
   const TEST_TEXT_EMPTY = '';
   const TEST_TEXT_SPACES = '       ';
