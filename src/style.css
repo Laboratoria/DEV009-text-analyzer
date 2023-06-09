@@ -47,8 +47,8 @@ textarea[name="user-input"] {
     text-align: left;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 35px;
-    left: 17vw;
+    gap: 30px;
+    left: 14vw;
     position: relative;
     top: 5px;
     margin: -20px 0 0 0;
@@ -59,7 +59,7 @@ textarea[name="user-input"] {
     border: 2px solid rgb(14, 5, 139);
     padding: 0 0px 0 0;
     border-radius: 20%;
-    width: 11em;
+    width: 14em;
 }
 
 .Palabras{
@@ -120,4 +120,13 @@ textarea[name="user-input"] {
 main{
    position: absolute;
    text-align: center;
+}
+footer{
+    font-size: 20px;
+    color: #aa4105;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    
 }
