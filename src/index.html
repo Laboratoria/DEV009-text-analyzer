@@ -8,34 +8,33 @@
 </head>
 
 <body class="colorDeFondo">
-  <!--Cuadro en donde irá el resultado de las funciones.-->
  
-  <header class="centrar">
-    <h1 class="titulo"> Analizador de texto</h1>
+  <header>
+    <h1> Analizador de texto</h1>
     </header>
     
 <p>
   <ul class="ulEstilo">
-    <li class="liEstilo">Recuento de caracteres <span class="cuadroResultado" id="contarCaracteres"></span></li>
-    <li class="liEstilo">Recuento de palabras <span id="contarPalabras"></span></li>
-    <li class="liEstilo">Sin caracteres <span id="sinCaracteres"></span></li>
-    <li class="liEstilo">Promedio de longitud <span id="longitudPromedio"></span></li> 
-    <li class="liEstilo">Recuento de numeros <span id="contarNumeros"></span></li>
-    <li class="liEstilo">Suma de numeros <span id="sumaNumeros"></span></li>
+    <li class="liEstilo">Recuento de caracteres <span id="contarCaracteres" class="cuadroResultado" type="textbox"></span></li>
+    <li class="liEstilo">Recuento de palabras <span id="contarPalabras" class="cuadroResultado" type="textbox"></span></li>
+    <li class="liEstilo">Sin caracteres <span id="sinCaracteres" class="cuadroResultado" type="textbox"></span></li>
+    <li class="liEstilo">Promedio de longitud <span id="longitudPromedio" class="cuadroResultado" type="textbox"></span></li> 
+    <li class="liEstilo">Recuento de numeros <span id="contarNumeros" class="cuadroResultado" type="textbox"></span></li>
+    <li class="liEstilo">Suma de numeros <span id="sumaNumeros" class="cuadroResultado" type="textbox"></span></li>
   </ul>
 </p>
  
-<textarea id="user-input" class="cuadroDeTexto" type="string">
+<textarea name="user-input" type="string">
 </textarea>
 
 <div>
   <button type="button" id="reset-button" class="boton" >Limpiar texto</button>
 </div>
 
-<footer class="autor">
+<footer>
   <p>Bernardita del Pino Villaseca</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="index.js" src="analyzer.js"></script>
   </body>
 </html>

@@ -1,7 +1,5 @@
 import analyzer from './analyzer.js';
 
-// //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-
 const textarea= document.querySelector("textarea[name='user-input']"); 
 textarea.addEventListener("keyup",function(){ 
     const contenido = textarea.value;
@@ -23,10 +21,10 @@ textarea.addEventListener("keyup",function(){
 
     const sumaNumeros = analyzer.getNumberSum(contenido);
     document.getElementById("sumaNumeros").innerHTML = sumaNumeros;   
-})   
+});
 
 const button= document.getElementById("reset-button"); 
-button.addEventListener("click",()=>{ 
-    const textarea = document.querySelector("textarea[name='user-input']");
+button.addEventListener("click", function(){
+    const textarea = document.querySelector("user-input");
     textarea.value='';
 });

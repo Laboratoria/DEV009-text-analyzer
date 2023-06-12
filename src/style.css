@@ -7,34 +7,20 @@ header{
     font-family: math;
     color: white;
     background-color: #9376E0;
-    margin: 30px;
-    border: solid 3px;
-    border-radius: 16px;
-    border-color: #9376E0;
+    max-width: -webkit-fill-available;
+    margin: 50px;
+    border: dashed 2px;
+    border-radius: 3px;
+    border-color: white;
+    width: 100%;
+  
 }
 
 .colorDeFondo{
     background-image: url('https://i.pinimg.com/736x/bb/87/b1/bb87b128cb37e85e4c6f28ddf99639b3.jpg');
 }
 
-.cuadroDeTexto{
-    text-align: -webkit-center;
-    font-family: math;
-    color: #9376E0;
-    max-width: -webkit-fill-available;
-    margin: 50px;
-    width: 1000px;
-    height: 137px;
-    resize: none;
-    margin-top: 0px;
-    margin-left: 150px;
-    font-size: 18px;
-    color: black;
-    font-family: math;
-    border-radius: 24px;
-}
-
-.ul-estilo{
+.ulEstilo{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -43,9 +29,10 @@ header{
     justify-content: center;
     align-items: baseline;
     justify-content: center;
+    margin: 9px;
 }
 
-.li-Estilo{
+.liEstilo{
     background-color: bisque;
     border-radius: 10px;
     border: solid 2px white;
@@ -57,19 +44,38 @@ header{
     margin: 9px;
 }
 
-.reset-button{
-    
-    border: solid 2px  white;
-    width: 93px;
-    height: 50px;
+textarea[name="user-input"]{  
+    text-align: -webkit-center;
     font-family: math;
-    font-size: 14px;
-    padding: 9px;
-    margin: 9px;
-    margin-left: auto;
-    margin-right: auto;
+    color: #9376E0;
+    margin: 50px;
+    width: 1000px;
+    height: 137px;
+    resize: none;
+    margin-top: 0px;
+    margin-left: 150px;
+    font-size: 18px;
+    color:darkmagenta;
+    font-family: math;
+    border-radius: 24px;
+    border-color: #9376E0;
 }
 
+
+#reset-button{  
+    border: dashed 2px  white; 
+    border-radius: 25px;
+    border-color:#9376E0;
+    width: 93px; 
+    height: 50px; 
+    font-family: math; 
+    font-size: 14px; 
+    padding: 9px; 
+    margin: 9px; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: grid;
+} 
 
 footer{
     text-align: -webkit-center;
@@ -78,26 +84,13 @@ footer{
     background-color: #9376E0;
     max-width: -webkit-fill-available;
     margin: 50px;
-    border: solid 10p;
-    border-radius: 16px;
-    border-color: #9376E0;
+    border: dashed 2px;
+    border-radius: 10px;
+    border-color: white;
     width: 100%;
-}
-
-.cuadroResultado{
-    width: 50px;
-    height: 20px;
-    background-color: white;
 }
 
 .separadoDeLineas{
     line-height: 2;
 }
 
-.textAreaNoModificable{
-    resize: none;
-    /* float: right; */
-    margin-left: 6px;
-    width: 20px;
-    height: 20px;
-}
