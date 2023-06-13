@@ -45,12 +45,14 @@ const analyzer = {
   //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
 
   getNumberCount: (text) => {
-    const palabrasseparadas = text.split(" ");// separa el texto en palabras
-    const esnumero = n => !!Number(n);
-    let contarnumeros = 0; // se declara la variable contar números
-    for (let i = 0; i < palabrasseparadas.length; i++) {// por medio de for hace un recorrido 
-      if (esnumero(palabrasseparadas[i])) { // si el arreglo en la posicion i tiene numeros, entra en el if y lo va contando
-        contarnumeros = contarnumeros + 1;
+    let palabrasseparadas = text.split(" ");
+    let arrsinespacios = palabrasseparadas.filter(palabra => palabra !== '');
+    let contarnumeros = 0;
+    const regex = /^[0-9]*$/;
+    const tienesolonumeros = false;
+    for (let i = 0; i < arrsinespacios.length; i++) {
+      if (regex.test(arrsinespacios[i])) {
+        contarnumeros = contarnumeros + 1
       }
     }
     return contarnumeros;
