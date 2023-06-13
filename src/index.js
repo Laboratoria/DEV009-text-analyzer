@@ -32,7 +32,13 @@ function analizar() {
   // despues del igual se concatena el valor de la palabra palabras con el valor que retorna el metodo getWordCount
   document.querySelector(".Palabras").innerHTML = "Palabras &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + analyzer.getWordCount(resultado);
   document.querySelector(".Caracteres").innerHTML = "Caracteres &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + analyzer.getCharacterCount(resultado);
+  document.querySelector(".Caracteressinespacios").innerHTML = "Caracteres sin espacios &nbsp;&nbsp;&nbsp; " + analyzer.getCharacterCountExcludingSpaces(resultado);
+  document.querySelector(".Promediolongitud").innerHTML = "Promedio Longitud &nbsp;&nbsp;&nbsp; " + analyzer.getAverageWordLength(resultado);
+  document.querySelector(".Numeros").innerHTML = "Numeros &nbsp;&nbsp;&nbsp; " + analyzer.getNumberCount(resultado);
+  document.querySelector(".Suma").innerHTML = "Suma Total Numeros &nbsp;&nbsp;&nbsp; " + analyzer.getNumberSum(resultado);
 }
+
+
 
 
 

@@ -1,16 +1,21 @@
-video , h1 {
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-margin: 0;
+video,
+h1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
-video{
+video {
     object-fit: cover;
     position: absolute;
 }
-h1{
+
+header{
+color: rgba(197, 27, 69, 0.836);
+}
+h1 {
     position: absolute;
     font-size: 60px;
     font-family: inter;
@@ -22,7 +27,7 @@ h1{
     margin-bottom: 5px;
 }
 
-main{
+main {
     position: absolute;
     top: 140px;
 }
@@ -37,7 +42,7 @@ textarea[name="user-input"] {
     margin: 35px 0;
 }
 
-.resultados{
+.resultados {
     font-size: 25px;
     color: blue;
     text-decoration: double;
@@ -47,52 +52,119 @@ textarea[name="user-input"] {
     text-align: left;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 35px;
-    left: 17vw;
+    gap: 30px;
+    left: 14vw;
     position: relative;
     top: 5px;
     margin: -20px 0 0 0;
     background: transparent;
-    
+
 }
-.resultados>li{
+
+li {
     border: 2px solid rgb(14, 5, 139);
     padding: 0 0px 0 0;
     border-radius: 20%;
-    width: 11em;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
 }
 
-.Palabras{
-   color: #200972; 
-   font-weight: 900;
-}
-
-.Caracteres{
-    color: #d81d5b;
-    font-weight: 900; 
- }
-
- .Numeros{
-    color: #054715af; 
+.Palabras {
+    color: #200972;
     font-weight: 900;
- }
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
 
- .Caracteressinespacios{
+.Caracteres {
+    color: #d81d5b;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Numeros {
+    color: #054715af;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Caracteressinespacios {
     color: #c767b7;
     font-weight: 900;
- }
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
 
- .Suma{
-    color: #76397e; 
+.Suma {
+    color: #76397e;
     font-weight: 900;
- }
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
 
- .Promediolongitud{
-    color: #b3693e; 
+.Promediolongitud {
+    color: #b3693e;
     font-weight: 900;
- }
- 
-#reset-button{
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+#reset-button {
     font-size: 28px;
     background: #252525;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -112,12 +184,23 @@ textarea[name="user-input"] {
     display: block;
     left: 15vw;
 }
-#reset-button:hover{
+
+#reset-button:hover {
     box-shadow: inset 200px 0 0 0 #c7e618;
     color: #000;
 }
 
-main{
-   position: absolute;
-   text-align: center;
+main {
+    position: absolute;
+    text-align: center;
+}
+
+footer {
+    font-size: 20px;
+    color: #aa4105;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+
 }
