@@ -1,0 +1,204 @@
+video,
+h1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+}
+
+header{
+color: rgba(197, 27, 69, 0.836);
+}
+h1 {
+    position: absolute;
+    font-size: 60px;
+    font-family: inter;
+    font-weight: 900;
+    line-height: 15vh;
+    text-align: center;
+    background: rgb(107, 175, 192);
+    mix-blend-mode: screen;
+    margin-bottom: 5px;
+}
+
+main {
+    position: absolute;
+    top: 140px;
+}
+
+textarea[name="user-input"] {
+    position: relative;
+    left: 20%;
+    border-radius: 2%;
+    box-shadow: 20px 20px 50px gray;
+    font-size: 20px;
+    border: 1px solid rgb(24, 89, 187);
+    margin: 35px 0;
+}
+
+.resultados {
+    font-size: 25px;
+    color: blue;
+    text-decoration: double;
+    list-style: none;
+    columns: 2;
+    line-height: 40px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    left: 14vw;
+    position: relative;
+    top: 5px;
+    margin: -20px 0 0 0;
+    background: transparent;
+
+}
+
+li {
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Palabras {
+    color: #200972;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Caracteres {
+    color: #d81d5b;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Numeros {
+    color: #054715af;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Caracteressinespacios {
+    color: #c767b7;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Suma {
+    color: #76397e;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+.Promediolongitud {
+    color: #b3693e;
+    font-weight: 900;
+    border: 2px solid rgb(14, 5, 139);
+    padding: 0 0px 0 0;
+    border-radius: 20%;
+    width: 14em;
+    background: transparent;
+    margin: auto;
+    display: block;
+    height: auto;
+    box-sizing: inherit;
+    content: normal;
+}
+
+#reset-button {
+    font-size: 28px;
+    background: #252525;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #0f28b4;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #e7eb08;
+    transition: ease-out 0.6s;
+    position: relative;
+    display: block;
+    left: 15vw;
+}
+
+#reset-button:hover {
+    box-shadow: inset 200px 0 0 0 #c7e618;
+    color: #000;
+}
+
+main{
+   position: absolute;
+   text-align: center;
+}
+footer{
+    font-size: 20px;
+    color: #aa4105;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+}

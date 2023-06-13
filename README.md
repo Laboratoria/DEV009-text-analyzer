@@ -2,99 +2,133 @@
 
 ## Índice
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Funcionalidades](#3-funcionalidades)
-* [4. Boilerplate](#4-boilerplate)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pruebas](#6-pruebas)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
-* [8. Consideraciones para pedir tu Project Feedback](#8-consideraciones-para-pedir-tu-project-feedback)
-* [9. Objetivos de aprendizaje](#9-objetivos-de-aprendizaje)
-* [10. Funcionalidades opcionales](#10-funcionalidades-opcionales)
-
+| <p align="center"><img src="Readme%20imagenes/planning.png"></p> | <p align="center"><img src="Readme%20imagenes/search.png"></p> | <p align="center"><img src="Readme%20imagenes/notes.png"></p> | <p align="center"><img src="Readme%20imagenes/javascript.png"></p> | <p align="center"><img src="Readme%20imagenes/algorithm.png"></p> | <p align="center"><img src="Readme%20imagenes/testing.png"></p> | <p align="center"><img src="Readme%20imagenes/web.png"></p> | <p align="center"><img src="Readme%20imagenes/dar-amor.png"></p> |
+| ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | ----------------------  | ---------------------- |  
+| [1.Consideraciones generales](#1-consideraciones-generales) | [2.Preámbulo ](#2-preámbulo) | [3.Funcionalidades](#3-funcionalidades) | [4.Boilerplate](#4-boilerplate) | [5.Estructura del Proyecto](#5-Estructura-del-Proyecto) | [6.Pruebas](#6-pruebas) | [7.Visita nuestro sitio web](https://nancynallely.github.io/DEV009-text-analyzer/src/) | [8.Agradecimientos](https://nancynallely.github.io/DEV009-text-analyzer/src/) |
 ***
 
 ## 1. Consideraciones generales
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+* Este proyecto se resolvio de forma **individual**.
+* El rango de tiempo estimado para completar el proyecto fue de 1 a 3 Sprints, se completo en 2.
+* Es importante leer las funcionalidades para saber las metricas que puedes obtener.
+* El analizador de texto te permitira obtener información de analisis de textos que tu desees.
 
 ## 2. Preámbulo
 
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/bootcamp/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
+![Una lupa sobre texto de libro](/Readme%20imagenes/analizador%20de%20texto.jpg)
 
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+[Referencia](https://www.lexicool.com/text_analyzer.asp?IL=3)
 
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
 
-En general, las aplicaciones de análisis de texto brindan información
-valiosa y métricas sobre los textos que pueden ayudar a los usuarios a
-tomar decisiones informadas y sacar conclusiones significativas.
-Mediante el uso de estas herramientas de análisis, los usuarios pueden
-obtener una comprensión más profunda de los textos.
+Un analizador de texto permite analizar un texto, contando numero de palabras, caracteres, numeros, etc. presentes en el texto que se desea analizar, también proporciona información estadistica clave según las necesidades requeridas.
+
+Es útil para cualquier usuario que tenga la necesidad de analizar sus textos, para la toma de desiciones, promueve a una mejor organización, los traductores podrán ademas calcular facilmente el precio de un texto en cuestión de sus tarifas por palabra.
+
+Es también útil para aquellos usuarios que desean saber la suma de los números contenidos en un texto, por ejemplo un maestro que requiere saber la suma de varias calificaciones de sus alumnos, para los usuarios que se dedican a las ventas, pueden hacer sus cuentas de una manera más fácil.
+
+En terminos generales un analizador de texto se puede adaptar a tus necesidades, y proporciona información reelevante para una empresa grande, mediana o pequeña, que le puede ayudar a optimizar la toma de desiciones o mejorar sus controles administrativos según sea el caso particular de cada una.
 
 ## 3. Funcionalidades
 
-En este proyecto implementarás un analizador de texto web para calcular
+En este proyecto se presenta un analizador de texto web para calcular
 y mostrar métricas de un texto enviado por el usuario.
 
 El listado de funcionalidades es el siguiente:
 
-1. La aplicación debe permitir al usuario ingresar un texto escribiéndolo
-en un cuadro de texto.
 
-2. La aplicación debe calcular las siguientes métricas y actualizar el
+1. La aplicación debe permitir al usuario ingresar un texto escribiéndolo
+en un cuadro de texto, el cual e creado en html usando el siguiente codigo:
+
+
+![caja de texto](/Readme%20imagenes/imagenes%20codigo/caja%20de%20texto.png)
+
+
+2. La aplicación calcula las siguientes métricas y actualiza el
 resultado en tiempo real a medida que el usuario escribe su texto:
 
-    - **Recuento de palabras**: la aplicación debe poder contar el número de
-    palabras en el texto de entrada y mostrar este recuento al usuario
-    - **Recuento de caracteres**: la aplicación debe poder contar el número de
+```
+
+    - **Recuento de palabras**: la aplicación cuenta el número de
+    palabras en el texto de entrada y muestra este recuento al usuario.
+
+    El objeto `analyzer` contiene un método `getWordCount` para calcular el
+    recuento de palabras de un texto como se muestra en el siguiente código:
+
+```
+  ![recuento de palabras](/Readme%20imagenes/imagenes%20codigo/recuento%20de%20palabras.png)
+
+
+
+    - **Recuento de caracteres**: la aplicación cuenta el número de
     caracteres en el texto de entrada, incluidos espacios y signos de
-    puntuación, y mostrar este recuento al usuario.
+    puntuación, y muestra este recuento al usuario.
+
+    El objeto `analyzer` contiene un método `getCharacterCount` para calcular
+    el recuento de caracteres de un texto, se muestra en el siguiente código:
+
+  ![recuento de caracteres](/Readme%20imagenes/imagenes%20codigo/recuento%20caracteres.png)
+
+
     - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
-    la aplicación debe poder contar el número de caracteres en el texto de
-    entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
-    al usuario.  
-    - **Recuento de números**: la aplicación debe contar cúantos números hay en
-    el texto de entrada y mostrar este recuento al usuario.
-    - **Suma total de números**: la aplicación debe sumar todos los números que
-    hay en el texto de entrada y mostrar el resultado al usuario.
-    - **Longitud media de las palabras**: la aplicación debe calcular la
-    longitud media de las palabras en el texto de entrada y mostrársela al usuario.
+    la aplicación cuenta el número de caracteres en el texto de entrada, excluyendo espacios 
+    y signos de puntuación, y muestra este recuento al usuario.  
 
-3. La aplicación debe permitir limpiar el contenido de la caja de texto haciendo
-clic en un botón.
+    El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces` para calcular 
+    el recuento de caracteres excluyendo espacios y signos de puntuación de un texto, como 
+    se muestra en el siguiente código:
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
+  ![caracteres sin espacios](/Readme%20imagenes/imagenes%20codigo/caracteres%20sin%20espacios.png)
+
+
+    - **Recuento de números**: la aplicación cuenta cúantos números hay en el texto de entrada y muestra
+     este recuento al usuario.
+
+     El objeto `analyzer` contiene un método `getNumbersCount` para contar cúantos números hay en un texto,
+     se muestra en el siguiente código:
+  
+  ![recuento de números](/Readme%20imagenes/imagenes%20codigo/recuento%20de%20numeros.png)
+
+
+
+    - **Suma total de números**: la aplicación suma todos los números que hay en el texto de entrada y muestra
+     el resultado al usuario.
+
+     El objeto `analyzer` contiene un método `getNumbersSum` para la suma longitud media de los números en un texto.
+     como se muestra en el siguiente código:
+
+     
+  ![Suma Total Números](/Readme%20imagenes/imagenes%20codigo/suma%20total%20numeros.png)
+
+
+
+    - **Longitud media de las palabras**: la aplicación calcula la longitud media de las palabras en el texto 
+    de entrada y la muestra al usuario.
+
+    El objeto `analyzer` contiene un método `getAverageWordLength` para calcular la longitud media de las palabras
+    en un texto, muestra en el siguiente código:
+
+   
+  ![Promedio Longitud](/Readme%20imagenes/imagenes%20codigo/Promedio%20longitud.png)
+
+
+
+3. La aplicación permite limpiar el contenido de la caja de texto haciendo clic en el botón
+**Limpiar Métricas**.
+
+
+![Text analyzer demo](/Readme%20imagenes/analizador%20.png)
+
+
 
 ## 4. Boilerplate
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
+La lógica del proyecto esta implementada completamente en JavaScript.
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
+ Un _boilerplate_es la estructura básica de un proyecto que sirve como un punto de partida con
 archivos y configuración inicial de dependencias y tests.
 
-El boilerplate que les damos contiene esta estructura:
+El boilerplate que damos contiene esta estructura:
 
 ```text
 ./
@@ -116,52 +150,35 @@ El boilerplate que les damos contiene esta estructura:
 
 ### Descripción de scripts / archivos
 
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
+* `README.md`: Contiene la información necesaria para describir el contenido del proyecto,
+  su funcionalidad y decisiones de diseño.
 * `.github/workflows`: esta carpeta contine la configuracion para la ejecution
   de Github Actions. No debes modificar esta carpeta ni su contenido.
-* `docs/images`: contiene las imagenes de este README.
+* `Readme images`: contiene las imagenes de este README.
 * `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de
-  aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
-* [`src/index.html`](./src/index.html): este es el punto de entrada a tu
-  aplicación. Este archivo debe contener tu HTML.
-* [`src/style.css`](./src/style.css): este archivo debe contener las reglas de
-  estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
-  uso de frameworks de CSS (Bootstrap, Materialize, etc).
-* [`src/analyzer.js`](./src/analyzer.js): acá debes implementar el objeto
+  aceptación y end-to-end. 
+* [`src/index.html`](./src/index.html):Este archivo contiene el HTML del proyecto.
+* [`src/style.css`](./src/style.css): este archivo contiene las reglas de
+  estilo.
+* [`src/analyzer.js`](./src/analyzer.js): aqui esta implementado el objeto
   `analyzer`, el cual ya está _exportado_ en el _boilerplate_. Este objeto
-  (`analyzer`) debe contener seis métodos:
-  - `analyzer.getWordCount(text)`: esta función debe retornar el recuento de
+  (`analyzer`) contiene seis métodos:
+  - `analyzer.getWordCount(text)`: esta función retorna el recuento de
   palabras que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCount(text)`: esta función debe retornar el recuento
+  - `analyzer.getCharacterCount(text)`: esta función retorna el recuento
   de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCountExcludingSpaces(text)`: esta función debe retornar
+  - `analyzer.getCharacterCountExcludingSpaces(text)`: esta función retorna
   el recuento de caracteres excluyendo espacios y signos de puntuación que se
   encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberCount(text)`: esta función debe retornar cúantos números
+  - `analyzer.getNumberCount(text)`: esta función retorna cúantos números
   se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberSum(text)`: esta función debe retornar la suma de todos
+  - `analyzer.getNumberSum(text)`: esta función retorna la suma de todos
   los números que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getAverageWordLength(text)`: esta función debe retornar la longitud
+  - `analyzer.getAverageWordLength(text)`: esta función retorna la longitud
   media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   En este caso usa 2 dígitos decimales.
-
-  Para ejemplo de uso de cada función recomendamos ver el archivo
-  [`test/analyzer.spec.js`](./test/analyzer.spec.js).
-
-  _Nota:  para simplificar las funcionalidades, definiremos las palabras como
-  un grupos de caracteres separados por espacios. Por ejemplo las palabras del
-  texto de entrada `¡Si, Tú puedes hacerlo!` son cuatro:_
-
-  - _`¡Si,`_
-  - _`Tú`_
-  - _`puedes`_
-  - _`hacerlo!`_
-
-* [`src/index.js`](./src/index.js): acá debes escuchar eventos del DOM, invocar
-  los métodos del objeto `analyzer` según sea necesario y actualizar el resultado
+* [`src/index.js`](./src/index.js): acá se escuchan los eventos del DOM, y se invocan
+  los métodos del objeto `analyzer` según sea necesario para actualizar el resultado
   en la UI (interfaz de usuario).
 * [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
 pruebas unitarias para los métodos del objeto `analyzer`.
@@ -170,18 +187,23 @@ pruebas unitarias para los métodos del objeto `analyzer`.
 
 #### Deploy
 
-Hacer que los sitios estén publicados (o _desplegados_) para que usuarias de
-la web puedan acceder a él es algo común en proyectos de desarrollo de software.
+En este proyecto, utilizamos _Github Pages_ para desplegar nuestro sitio web.
 
-En este proyecto, utilizaremos _Github Pages_ para desplegar nuestro sitio web.
+Para hacer el deploy, debes de acceder a tu cuenta de GitHub, donde previamente ya tienes que tener
+un fork de este repositorio y dar en opcion setings, como se muestra a continuación:
 
-El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
+![Configuración GitHub Pages](/Readme%20imagenes/imagenes%20codigo/GitHub%20Pages.png)
+
+A continuación seleccionamos deploy for a branch en source, y en branch, seleccionar la rama donde se va a 
+generar tu página, damos guardar.
+
+![Configuración GitHub Pages](/Readme%20imagenes/imagenes%20codigo/pages.png)
+
+
+Posteriormente ejecuta el comando `npm run deploy` y también puedes
  consultar su [documentación oficial](https://docs.github.com/es/pages).
 
-## 5. Criterios de aceptación mínimos del proyecto
-
-A continuación encontrarás los criterios de aceptación mínimos del proyecto
-relacionados con cada objetivo de aprendizaje.
+## 5. Estructura del Proyecto
 
 ### HTML
 
@@ -323,32 +345,12 @@ relacionados con cada objetivo de aprendizaje.
   [`if..else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
   para evaluar condiciones.
 
-* **Uso de bucles/ciclos (while, for, for..of)**
+* **Uso de bucles/ciclos (for)**
 
   - [ ] La aplicación usa el statement
   [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
   para crear un bucle.
 
-* **Funciones (params, args, return)**
-
-  - [ ] El objeto `analyzer` contiene un método `getWordCount` para calcular el
-  recuento de palabras de un texto.
-
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCount` para calcular
-  el recuento de caracteres de un texto.
-
-  - [ ] El objeto `analyzer` contiene un método `getCharacterCountExcludingSpaces`
-  para calcular el recuento de caracteres excluyendo espacios y signos de
-  puntuación de un texto.
-
-  - [ ] El objeto `analyzer` contiene un método `getNumbersCount` para contar
-  cúantos números hay en un texto.
-
-  - [ ] El objeto `analyzer` contiene un método `getNumbersSum` para la suma
-  longitud media de los números en un texto.
-
-  - [ ] El objeto `analyzer` contiene un método `getAverageWordLength` para
-  calcular la longitud media de las palabras en un texto.
 
 * **Pruebas unitarias (unit tests)**
 
@@ -375,17 +377,17 @@ relacionados con cada objetivo de aprendizaje.
 
 * **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-  - [ ] La estudiante creó una cuenta en Github.
+  - [ ] Se creó una cuenta en Github.
 
-  - [ ] La estudiante configuró su cuenta de Github con una llave SSH.
+  - [ ] Se configuró la cuenta de Github con una llave SSH.
 
 * **Git: Control de versiones con git (clone, add, commit, push)**
 
-  - [ ] La estudiante creó un _fork_ para su proyecto.
+  - [ ] Se creó un _fork_ para el proyecto.
 
-  - [ ] La estudiante clonó su repositorio usando una llave SSH.
+  - [ ] Se clonó su repositorio usando una llave SSH.
 
-  - [ ] La estudiante creó _commits_ y los guardó en Github.
+  - [ ] Se creó _commits_ y se guardaron en Github.
 
 * **GitHub: Despliegue con GitHub Pages**
 
@@ -393,14 +395,13 @@ relacionados con cada objetivo de aprendizaje.
 
 ### Centrado en el usuario
 
-* **Diseñar y desarrollar un producto o servicio poniendo a las
-usuarias en el centro**
+* ** Se Diseño y desarrollo un producto o servicio poniendo a las usuarias en el centro**
 
 ### Diseño de producto
 
 * **Diseñar en distintos niveles de fidelidad**
 
-  - [ ] La estudiante creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
+  - [ ] Se creó prototipos de baja fidelidad para la UI (interfaz gŕafica).
 
 * **Seguir los principios básicos de diseño visual**
 
@@ -410,8 +411,8 @@ usuarias en el centro**
 
 ## 6. Pruebas
 
-Este proyecto cuenta con 3 conjuntos de pruebas que te ayudarán a conocer si
-cumples los criterios mínimos de aceptación.
+Este proyecto cuenta con 3 conjuntos de pruebas que ayudarón a conocer si se
+cumple con los criterios mínimos de aceptación.
 
 ### Pruebas unitarias
 
@@ -485,243 +486,39 @@ en la siguiente imagen:
 Este repositorio usa una GitHub Action para ejecutar automáticamente
 las pruebas unitarias, pruebas de criterios mínimos de aceptación y
 y pruebas end-to-end cada vez que se hagas un _push_ en la rama
-_main_ de tu repositorio.
+_main_ del repositorio.
 
 Puedes consultar el resultado de esta Github Action
-en la pestaña _Actions_ de tu repositorio en Github
+en la pestaña _Actions_ del repositorio en Github
 como se muestra en la siguiente imagen:
 
 ![Github Action](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650640-a8a8ed26-6f48-4053-8b3b-7dec7e35a9f8.gif "Github Action")
 
-## 7. Pistas, tips y lecturas complementarias
+## 7. Visita Nuestro Sitio Web
 
-### Prepara tu PC para trabajar
+En este espacio podrás acceder a nuestro sitio web e interactuar con el analizador de texto.
 
-Antes de comenzar instala lo siguiente:
 
-1. [Node.js](https://nodejs.org/)
-2. [git](https://git-scm.com/download/) Si estas en Linux es muy probable que
-  ya este instalado 👀.
-  Para conocer más de git visita
-  [este enlace](https://curriculum.laboratoria.la/es/topics/scm/01-git)
-3. Un editor de código, te sugerimos [Code](https://code.visualstudio.com/)
+## 8. Agradecimientos
 
-Después en [GitHub](https://github.com/):
+Agradecimiento a todo el equipo de laboratoria, por ser una guía en este proyecto y siempre tener apertura para cualquier bloqueo que se presentara, por las guías proporcionadas y los diferentes espacios de recreación para poder equilibrar el trabajo con la distracción.
 
-1. Crear una cuenta. Conoce más de GitHub en este
-  [link](https://curriculum.laboratoria.la/es/topics/scm/02-github/01-github)
-2. Realiza un fork de este proyecto
-3. Configura tu SSH Key  en GitHub. Puedes revisar este
-[video](https://www.youtube.com/watch?v=g0ZV-neSM7E) o
-[artículo](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+A mi esposo que es un pilar para mi y su acompañamiento también en los bloqueos presentados, gracias por sus explicaciones, por sus tips y consejos.
 
-Luego en una [shell](https://curriculum.laboratoria.la/es/topics/shell)
-ejecuta lo siguiente. Si estas en Windows puedes usar Git Bash:
+Gracias a mis compañeras de laboratoria por compartir sus avances y bloqueos, por dejarme conocerlas un poco más y estar presentes en este proceso de manera conjunta.
 
-1. Clona el fork en tu PC
-2. Ubica la shell en el proyecto que clonaste
-3. Instala las dependencias del proyecto con `npm install`
-4. Instala `playwright` con `npx playwright install chromium --with-deps`
-5. Para arrancar el servidor web `npm start` y dirígete a
-   `http://localhost:3000` en tu navegador.
-6. A codear se ha dicho! :rocket:
+Y finalmente gracias a dios por permitirme estar en este momento aqui en este proyecto, que sin duda me esta dejando muchas enseñanzas no solo de desarrollo sino también de vida.
 
-### Recursos y temas relacionados
 
-Súmate al canal de Slack [#project-text-analyzer](https://claseslaboratoria.slack.com/archives/C058GP6K9NY)
+### Nombre y contacto de quién elaboro:
 
-## 8. Consideraciones para pedir tu Project Feedback
 
-Antes de agendar tu Project Feedback con un coach, asegúrate que tu proyecto:
 
-* [ ] Cumple con todos los criterios mínimos de aceptación al ejecutar `npm run test:oas`
-* [ ] Cumple con todas las pruebas unitarias al ejecutar `npm run test`
-* [ ] Cumple con todas las pruebas _end to end_ al ejecutar `npm run test:e2e`
-* [ ] Esta libre de _errores_ de `eslint` al ejecutar `npm run test`
-* [ ] Está subido a GitHub.
-* [ ] Esta desplegado en GitHub Pages.
-* [ ] Tiene un README con la definición del producto.
 
-Además recuerda que debes hacer: llenado de sprint check out de cierre de proyecto, una autoevaluación de objetivos de aprendizaje y autoevaluación de life skills desde tu dashboard de estudiante. [Acá el link](https://coda.io/d/_deHfHkTC743/Como-lograras-aprender-DEV_sumg1#_lu6qL) del flujo para que puedas ver el proceso.
+[Nancy Nallely Martínez Domínguez](https://github.com/NancyNallely)
 
-Si no has completado todo lo anterior, no consideramos que estás lista para tu sesión de Project Feedback. ([acá](https://coda.io/d/_deHfHkTC743/Project-Feedback_suLH5) te dejamos el link de esta instancia).
 
-## 9. Objetivos de aprendizaje
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
-### HTML
 
-- [ ] **Uso de HTML semántico**
 
-  <details><summary>Links</summary><p>
-
-  * [HTML semántico](https://curriculum.laboratoria.la/es/topics/html/02-html5/02-semantic-html)
-  * [Semantics - MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
-
-### CSS
-
-- [ ] **Uso de selectores de CSS**
-
-  <details><summary>Links</summary><p>
-
-  * [Intro a CSS](https://curriculum.laboratoria.la/es/topics/css/01-css/01-intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
-</p></details>
-
-- [ ] **Modelo de caja (box model): borde, margen, padding**
-
-  <details><summary>Links</summary><p>
-
-  * [Box Model & Display](https://curriculum.laboratoria.la/es/topics/css/01-css/02-boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
-
-### Web APIs
-
-- [ ] **Uso de selectores del DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Manipulación del DOM](https://curriculum.laboratoria.la/es/topics/browser/02-dom/03-1-dom-methods-selection)
-  * [Introducción al DOM - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
-  * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
-
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introducción a eventos - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener)
-  * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
-</p></details>
-
-- [ ] **Manipulación dinámica del DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introducción al DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/es/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/es/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
-</p></details>
-
-### JavaScript
-
-- [ ] **Tipos de datos primitivos**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores primitivos - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures#valores_primitivos)
-</p></details>
-
-- [ ] **Strings (cadenas de caracteres)**
-
-  <details><summary>Links</summary><p>
-
-  * [Strings](https://curriculum.laboratoria.la/es/topics/javascript/06-strings)
-  * [String — Cadena de caracteres - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
-</p></details>
-
-- [ ] **Variables (declaración, asignación, ámbito)**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores, tipos de datos y operadores](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/01-values-variables-and-types)
-  * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
-</p></details>
-
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estructuras condicionales y repetitivas](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
-
-  <details><summary>Links</summary><p>
-
-  * [Bucles (Loops)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/02-loops)
-  * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [ ] **Funciones (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/03-functions)
-  * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/02-arrow)
-  * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [ ] **Pruebas unitarias (unit tests)**
-
-  <details><summary>Links</summary><p>
-
-  * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
-</p></details>
-
-- [ ] **Módulos de ECMAScript (ES Modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
-
-### Control de Versiones (Git y GitHub)
-
-- [ ] **Git: Instalación y configuración**
-
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-
-- [ ] **GitHub: Despliegue con GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Sitio oficial de GitHub Pages](https://pages.github.com/)
-</p></details>
-
-### Centrado en el usuario
-
-- [ ] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
-
-### Diseño de producto
-
-- [ ] **Diseñar en distintos niveles de fidelidad**
-
-- [ ] **Seguir los principios básicos de diseño visual**
-
-## 10. Funcionalidades opcionales
-
-Si terminaste con todas las [funcionalidades requeridas](#3-funcionalidades),
-intenta implementar las siguientes funcionalidades opcionales para
-profundizar en los objetivos de aprendizaje del proyecto:
-
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto vacía.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo espacios.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo caracteres de puntuación.
-
-Puedes habilitar las pruebas unitarias y en _end to end_ de estos casos
-en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
-[read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
