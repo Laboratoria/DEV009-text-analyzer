@@ -1,30 +1,40 @@
-const analyzer = {  
-  
+const analyzer = {
+
   getWordCount: (text) => {
-    const cantidadDePalabras = text.split(" ").length;
+    const cantidadDePalabras=text.split(" ").length;
     return cantidadDePalabras;
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getCharacterCount: (text) => {
-    const cantidadDeLetras = text.length;
+    const cantidadDeLetras=text.length;
     return cantidadDeLetras;
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const resultado=text.replace(/[!.,;:?¿)=(¡ ]/g,"");
+    const resultadoSinCaracteres=resultado.length;
+    return resultadoSinCaracteres;
   },
-  getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  getAverageWordLength: (text) => {
+    const cantidadDePalabras = text.replace(/[^\w\s]/g, '').split(' ');
+    let sumaLargos=0;
+    for(let i = 0; i <cantidadDePalabras.length; i++){
+      sumaLargos += cantidadDePalabras[i].length;
+    }
+    const largoPromedio =sumaLargos/cantidadDePalabras.length;
+    return largoPromedio;
   },
   getNumberCount: (text) => {
-    let contenidoSinNumeros = text.replace(/\D/g,'');
-    let numerosEnTotal = contenidoSinNumeros.length;
+    const contenidoSinNumeros=text.replace(/\D/g, '');
+    const numerosEnTotal=contenidoSinNumeros.length;
     return numerosEnTotal;
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    let elementosNumericos=text.match(/\d+/g);
+    let sumados=0;
+    if(elementosNumericos){
+      elementosNumericos=elementosNumericos.map(Number);
+      sumados=elementosNumericos.reduce((a,b)=> a + b);
+    }
+    return sumados;
   },
 };
-
 export default analyzer;
