@@ -96,7 +96,8 @@ test.describe('Para un texto sin números válidos:', () => {
 });
 
 test.describe('Botón:', () => {
-  
+  const TEST_TEXT_EMPTY = '';
+
   test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:3000/');
     const textarea = await page.locator('textarea[name="user-input"]');  
@@ -114,7 +115,7 @@ test.describe('Botón:', () => {
   });
 });
 
-//TODO: Reemplazar skip por describe para ejecutar el test de funcionalidades opcionales
+//TODO: No quitar skip
 test.skip('Opcional:', () => {
   const TEST_TEXT_EMPTY = '';
   const TEST_TEXT_SPACES = '       ';
