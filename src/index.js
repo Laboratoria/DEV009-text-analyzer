@@ -15,6 +15,7 @@ textarea.addEventListener("keyup", function () {
   const sumaNumeros = analyzer.getNumberSum(text);
   document.getElementById("sumaNumeros").innerHTML = sumaNumeros;
 })
+
 const button = document.getElementById("reset-button");
 button.addEventListener("click", function () {
   textarea.value = '';
