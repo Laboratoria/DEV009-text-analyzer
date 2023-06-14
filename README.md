@@ -147,7 +147,7 @@ clic en un botón.
 
 * **Diseño de baja fidelidad**
 
-  ![Text analyzer demo](file:///C:/Users/bnidp/OneDrive/Escritorio/baja%20fidelidad%20cuaderno.jpg).
+  ![Text analyzer demo]([file:///C:/Users/bnidp/OneDrive/Escritorio/baja%20fidelidad%20cuaderno.jpg](https://github.com/Bernidelpino/DEV009-text-analyzer/blob/be9d2af2d1e2bd187d3e173647b61c37ba25d835/baja%20fidelidad%20cuaderno.jpg).
 
 * **Prototipo de alta fidelidad**
 
