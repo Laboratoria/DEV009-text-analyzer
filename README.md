@@ -19,18 +19,23 @@ oraciones y el conteo de párrafos.
 El listado de funcionalidades es el siguiente:
 
   **Recuento de palabras**: la aplicación puede contar el número de
-    palabras en el texto de entrada y mostrar este recuento al usuario
+    palabras en el texto de entrada y mostrar este recuento al usuario.
+    
   **Recuento de caracteres**: la aplicación puede contar el número de
     caracteres en el texto de entrada, incluidos espacios y signos de
     puntuación, y mostrar este recuento al usuario.
+    
   **Recuento de caracteres excluyendo espacios y signos de puntuación**:
     la aplicación puede contar el número de caracteres en el texto de
     entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
     al usuario.  
+    
   **Longitud media de las palabras**: la aplicación puede calcular la
     longitud media de las palabras en el texto de entrada y mostrársela al usuario.
+    
   **Recuento de números**: la aplicación puede contar cúantos números hay en
     el texto de entrada y mostrar este recuento al usuario.
+    
   **Suma total de números**: la aplicación puede sumar todos los números que
     hay en el texto de entrada y mostrar el resultado al usuario.
 
