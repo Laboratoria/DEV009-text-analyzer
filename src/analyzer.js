@@ -1,29 +1,36 @@
 const analyzer = {
   getWordCount: (text) => {
-    const cantidadDePalabras=text.split(" ").length;
-    return cantidadDePalabras;
+    text = text.trim();
+    const palabrasSeparadas = text.split(" ");
+    const resultadoTexto = palabrasSeparadas.length; 
+    return resultadoTexto;
   },
   getCharacterCount: (text) => {
-    const cantidadDeLetras=text.length;
+    const cantidadDeLetras = text.length;
     return cantidadDeLetras;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    const resultado=text.replace(/[!.,;:"?¿)=(¡ ]/g,"");
-    const resultadoSinCaracteres=resultado.length;
+    const resultado = text.replace(/[!.,;:"?¿)=(¡ ]/g, "");
+    const resultadoSinCaracteres = resultado.length;
     return resultadoSinCaracteres;
   },
   getAverageWordLength: (text) => {
     const cantidadDePalabras = text.replace(/[^\w\s]/g, '').split(' ');
-    let sumaLargos=0;
-    for(let i = 0; i <cantidadDePalabras.length; i++){
+    let sumaLargos = 0;
+    for (let i = 0; i < cantidadDePalabras.length; i++) {
       sumaLargos += cantidadDePalabras[i].length;
     }
-    const largoPromedio =sumaLargos/cantidadDePalabras.length;
+    const largoPromedio = sumaLargos / cantidadDePalabras.length;
     return largoPromedio.toFixed(2);
   },
   getNumberCount: (text) => {
-    const contenidoSinNumeros=text.replace(/\D/g, '');
-    const numerosEnTotal=contenidoSinNumeros.length;
+    const contenidoSinNumeros = text.replace(/\D/g, '');
+    const numerosEnTotal = contenidoSinNumeros.length;
+    if (numerosEnTotal){
+    const esNumero = /^\d+(\.\d+)?$/;
+    const numeros = text.match(/\d+(\.\d+)?/g);
+    return total = 0;
+    }
     return numerosEnTotal;
   },
   getNumberSum: (text) => {
