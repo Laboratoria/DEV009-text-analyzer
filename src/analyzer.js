@@ -1,5 +1,4 @@
 const analyzer = {
-
   getWordCount: (text) => {
     const cantidadDePalabras=text.split(" ").length;
     return cantidadDePalabras;
@@ -9,7 +8,7 @@ const analyzer = {
     return cantidadDeLetras;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    const resultado=text.replace(/[!.,;:?¿)=(¡ ]/g,"");
+    const resultado=text.replace(/[!.,;:"?¿)=(¡ ]/g,"");
     const resultadoSinCaracteres=resultado.length;
     return resultadoSinCaracteres;
   },
@@ -20,7 +19,7 @@ const analyzer = {
       sumaLargos += cantidadDePalabras[i].length;
     }
     const largoPromedio =sumaLargos/cantidadDePalabras.length;
-    return largoPromedio;
+    return largoPromedio.toFixed(2);
   },
   getNumberCount: (text) => {
     const contenidoSinNumeros=text.replace(/\D/g, '');
@@ -28,13 +27,13 @@ const analyzer = {
     return numerosEnTotal;
   },
   getNumberSum: (text) => {
-    let elementosNumericos=text.match(/\d+/g);
-    let sumados=0;
-    if(elementosNumericos){
-      elementosNumericos=elementosNumericos.map(Number);
-      sumados=elementosNumericos.reduce((a,b)=> a + b);
+    const regex = /(?<![a-zA-Z])\d+(?:\.\d+)?(?![a-zA-Z])(?<![a-zA-Z])/g;
+    const numerosEncontrados = text.match(regex);
+    if (numerosEncontrados) {
+      const suma = numerosEncontrados.reduce((acumulador, numero) => acumulador + parseFloat(numero), 0);
+      return suma;
     }
-    return sumados;
+    return 0; 
   },
 };
 export default analyzer;

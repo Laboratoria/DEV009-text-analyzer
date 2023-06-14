@@ -104,8 +104,8 @@ test.describe('Botón:', () => {
     await textarea.click();
     await textarea.type(TEST_TEXT_NO_NUMBERS);
   });
-
   test('Limpia caja de texto', async ({ page }) => {
+    const TEST_TEXT_EMPTY = '';
     const textarea = await page.locator('textarea[name="user-input"]');
     await expect(textarea).toHaveValue(TEST_TEXT_NO_NUMBERS);
     const button = await page.locator('id=reset-button')
