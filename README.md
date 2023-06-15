@@ -151,7 +151,7 @@ clic en un botón.
 
 * **Prototipo de alta fidelidad**
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
+![Diseño sin título](https://github.com/Bernidelpino/DEV009-text-analyzer/assets/136273367/7f56eb32-9a3d-46f3-89d9-e29a59567192)
 
 
 ## 6. Pruebas
