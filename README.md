@@ -149,7 +149,11 @@ clic en un botón.
 
   ![Text analyzer demo](https://github.com/Bernidelpino/DEV009-text-analyzer/blob/main/baja%20fidelidad%20cuaderno.jpg).
 
-* **Prototipo de alta fidelidad**
+* **Primer prototipo**
+  
+  ![prototipo1](https://github.com/Bernidelpino/DEV009-text-analyzer/assets/136273367/ddab5aaa-18f8-47c4-b72b-46041702076a)
+
+* **Producto final**
 
 ![Diseño sin título](https://github.com/Bernidelpino/DEV009-text-analyzer/assets/136273367/7f56eb32-9a3d-46f3-89d9-e29a59567192)
 
