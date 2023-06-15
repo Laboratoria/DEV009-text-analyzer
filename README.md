@@ -162,7 +162,7 @@ Pruebas unitarias
 
 ### Pruebas de criterios mínimos de aceptación
 
-![npm run test oas](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650602-f0ca9170-7563-4edc-9e78-874fa012c4fd.gif "npm run test oas")
+![Diseño sin título (1)](https://github.com/Bernidelpino/DEV009-text-analyzer/assets/136273367/e4ef5527-f341-4b2c-bc2c-03413d8f696d)
 
 
 #### Pruebas end-to-end
