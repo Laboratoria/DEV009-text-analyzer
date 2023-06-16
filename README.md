@@ -71,4 +71,4 @@ Pruebas unitarias
 #### Pruebas end-to-end
 
 
-![npm run test e2e](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650622-a4da630e-8d39-4dd8-9fde-1a38c31a53e2.gif "npm run test e2e")
+![Diseño sin título (3)](https://github.com/Bernidelpino/DEV009-text-analyzer/assets/136273367/3c1b43b5-028e-40f0-84fd-d5a0b54b2b78)
