@@ -60,7 +60,7 @@ clic en un botón.
 ## 6. Pruebas
 Pruebas unitarias
 
-![npm run test](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650584-c8267968-d631-4fbb-b05f-458a970544b7.gif "npm run test")
+![Diseño sin título (2)](https://github.com/Bernidelpino/DEV009-text-analyzer/assets/136273367/9b7d3a27-5ceb-4c89-940f-4b604407f581)
 
 
 ### Pruebas de criterios mínimos de aceptación
