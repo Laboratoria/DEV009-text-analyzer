@@ -15,7 +15,6 @@ textarea.addEventListener("keyup", function () {
   const longitudPromedio = analyzer.getAverageWordLength(text);
   document.getElementById("longitudPromedio").innerHTML = longitudPromedio;
 })
-
 const button = document.getElementById("reset-button");
 button.addEventListener("click", function () {
   textarea.value = '';
