@@ -28,7 +28,7 @@ const analyzer = {
     let sum = 0;
     numbers.forEach((number) => {
       const parseNumber = parseFloat(number);
-      if (!isNaN(parseNumber) && isFinite(parseNumber)) {
+      if (!isNaN(parseNumber) && isFinite(parseNumber)){
         sum += parseNumber;
       }
     });
