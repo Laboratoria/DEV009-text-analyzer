@@ -8,12 +8,12 @@ textarea.addEventListener("keyup", function () {
   document.getElementById("contarPalabras").innerHTML = contarPalabras;
   const sinCaracteres = analyzer.getCharacterCountExcludingSpaces(text);
   document.getElementById("sinCaracteres").innerHTML = sinCaracteres;
-  const longitudPromedio = analyzer.getAverageWordLength(text);
-  document.getElementById("longitudPromedio").innerHTML = longitudPromedio;
   const contarNumeros = analyzer.getNumberCount(text);
   document.getElementById("contarNumeros").innerHTML = contarNumeros;
   const sumaNumeros = analyzer.getNumberSum(text);
   document.getElementById("sumaNumeros").innerHTML = sumaNumeros;
+  const longitudPromedio = analyzer.getAverageWordLength(text);
+  document.getElementById("longitudPromedio").innerHTML = longitudPromedio;
 })
 
 const button = document.getElementById("reset-button");
