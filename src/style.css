@@ -10,7 +10,6 @@ header {
     border-color: white;
     width: 100%;
 }
-
 .colorDeFondo {
     background-image: url('https://i.blogs.es/6e7601/paige-cody--esaigzemqu-unsplash/840_560.jpeg');
     background-size: cover;
@@ -66,7 +65,6 @@ textarea[name="user-input"] {
     border-color: #f19b8f;
     background-color: #ffda9e;
 }
-
 #reset-button {
     border: dashed 2px;
     border-radius: 20px;
@@ -82,7 +80,6 @@ textarea[name="user-input"] {
     margin-right: auto;
     display: grid;
 }
-
 footer {
     text-align: -webkit-center;
     font-family: math;
